@@ -1,0 +1,494 @@
+<!-- Gentlepaw v0.1 @Christina - Ioanna Vrettou -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gentlepaw</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Patrick+Hand&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="gentlepaw.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Gentlepaw logo" src="img/Logo lightyellow.png" />
+        <!-- <p class="logo">Logo</p> -->
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-list-flex">
+            <a href="#" class="main-nav-link">Dress</a>
+            <ul class="main-nav-exp">
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Dresses</a></li>
+              <li><a href="#">Pullovers</a></li>
+              <li><a href="#">Scarfs</a></li>
+              <li><a href="#">Dress Fancy</a></li>
+            </ul>
+          </li>
+          <li class="main-nav-list-flex">
+            <a href="#" class="main-nav-link">Collaborations</a>
+            <ul class="main-nav-exp">
+              <li><a href="#">Pet Walking</a></li>
+              <li><a href="#">Nutrition</a></li>
+              <li><a href="#">Toys</a></li>
+              <li><a href="#">Cozy Beds</a></li>
+            </ul>
+          </li>
+          <li class="main-nav-list-flex">
+            <a href="#" class="main-nav-link">About us</a>
+            <ul class="main-nav-exp">
+              <li><a href="#">Our History</a></li>
+              <li><a href="#">Who we are</a></li>
+            </ul>
+          </li>
+          <li>
+            <button link="#" class="cart-btn">
+              <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ***************** -->
+      <!-- TOGGLE MENU -->
+      <!-- ***************** -->
+
+      <button class="btn-mobile-nav-open">
+        <ion-icon
+          class="icon-mobile-nav"
+          name="menu-outline"
+          onclick="toggleButtonHandler()"
+        ></ion-icon>
+      </button>
+      <button class="btn-mobile-nav-close">
+        <ion-icon
+          class="icon-mobile-nav"
+          name="close-outline"
+          onclick="toggleButtonHandlerClose()"
+        ></ion-icon>
+      </button>
+    </header>
+    <nav class="toggle-menu">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-list-flex">
+          <a href="#" class="mobile-nav-link">Dress</a>
+          <ul class="mobile-nav-exp">
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Pullovers</a></li>
+            <li><a href="#">Scarfs</a></li>
+            <li><a href="#">Dress Fancy</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-list-flex">
+          <a href="#" class="mobile-nav-link">Collaborations</a>
+          <ul class="mobile-nav-exp">
+            <li><a href="#">Pet Walking</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Toys</a></li>
+            <li><a href="#">Cozy Beds</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-list-flex">
+          <a href="#" class="mobile-nav-link">About us</a>
+          <ul class="mobile-nav-exp">
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Who we are</a></li>
+          </ul>
+        </li>
+        <li class="toggle-cart">
+          <button link="#" class="cart-btn">
+            <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ***************** -->
+    <!-- MAIN -->
+    <!-- ***************** -->
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-txt-box">
+            <h1 class="heading-hero">
+              Dress your pet like the gentleman it is
+            </h1>
+            <p class="hero-description">
+              Create the most dazzling outfit for your bestest friend without
+              breaking bank. From a winter morning walk to your spring party in
+              the yard, we got you covered.
+            </p>
+            <a href="#" class="btn-header">Start Shopping</a>
+            <a href="#" class="btn-header btn-header--outline"
+              >Learn more &darr;</a
+            >
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="img/hero-img.jpg"
+              class="hero-img"
+              alt="A pug in a yellow and white sweater"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-dress" id="dress">
+        <div class="container">
+          <span class="subheading">Dress in style</span>
+          <h2 class="heading-secondary">
+            Clothes and accessories for all occasions
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols dress-container">
+          <!-- CASUAL DRESSING -->
+
+          <div class="dress-text-box">
+            <h3 class="heading-tertiary">Casual walk</h3>
+
+            <p class="dress-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              quidem asperiores ullam, unde modi et harum accusantium amet
+              voluptate qui nostrum blanditiis a quo tenetur perferendis iure
+              quis cum illo?
+            </p>
+          </div>
+          <div class="dress-img-box">
+            <img src="img/casual.jpg" class="dress-img" alt="" />
+          </div>
+
+          <!-- FORMAL DRESSING -->
+
+          <div class="dress-text-box formal-txt-box-normal">
+            <h3 class="heading-tertiary">Business/Formal</h3>
+
+            <p class="dress-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates reiciendis totam at placeat blanditiis natus, voluptate
+              nihil consequatur adipisci obcaecati sapiente, dicta odit pariatur
+              nemo saepe explicabo aspernatur fugiat asperiores?
+            </p>
+          </div>
+
+          <div class="dress-img-box">
+            <img src="img/formal.jpg" class="dress-img" alt="" />
+          </div>
+          <div class="dress-text-box formal-txt-box-reversed">
+            <h3 class="heading-tertiary">Business/Formal</h3>
+
+            <p class="dress-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates reiciendis totam at placeat blanditiis natus, voluptate
+              nihil consequatur adipisci obcaecati sapiente, dicta odit pariatur
+              nemo saepe explicabo aspernatur fugiat asperiores?
+            </p>
+          </div>
+
+          <!-- PERSONALITY -->
+
+          <div class="dress-text-box">
+            <h3 class="heading-tertiary">Personality</h3>
+
+            <p class="dress-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              aliquid temporibus perferendis tempore dolorem!
+            </p>
+          </div>
+          <div class="dress-img-box">
+            <img src="img/personality.jpg" class="dress-img" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+
+      <section class="section-choose" id="choose">
+        <div class="container">
+          <span class="subheading">Explore</span>
+          <h2 class="heading-secondary">Why Choose Us?</h2>
+          <div class="choose-container">
+            <div class="choose">
+              <ul>
+                <li class="choose-item">
+                  <div class="choose-head">
+                    <ion-icon
+                      class="choose-icon"
+                      name="checkmark-done-circle-outline"
+                    ></ion-icon>
+                    <span class="choose-title">Quality Assurance</span>
+                  </div>
+                  <p class="choose-text">
+                    All our products are hypoallergic and sourced from trusted
+                    brands.
+                  </p>
+                </li>
+                <li class="choose-item">
+                  <div class="choose-head">
+                    <ion-icon
+                      class="choose-icon"
+                      name="people-outline"
+                    ></ion-icon
+                    ><span class="choose-title">Expert Advice</span>
+                  </div>
+                  <p class="choose-text">
+                    Our team consists of experienced shop guides and passionate
+                    pet lovers ready to help you find the best products for your
+                    friend.
+                  </p>
+                </li>
+                <li class="choose-item">
+                  <div class="choose-head">
+                    <ion-icon class="choose-icon" name="home-outline"></ion-icon
+                    ><span class="choose-title">Convenience</span>
+                  </div>
+                  <p class="choose-text">
+                    Shop online from the comfort of your sofa and have the goods
+                    delivered to your doorstep in 5-10 business days.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="gallery">
+              <figure class="gallery-item">
+                <img src="img/gallery-1.jpg" alt="Picture of pet clothes" />
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="img/gallery-2.jpg" alt="Picture of pet clothes" />
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="img/gallery-3.jpg" alt="Picture of pet clothes" />
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="img/gallery-4.jpg" alt="Picture of pet clothes" />
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="img/gallery-5.jpg" alt="Picture of pet clothes" />
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="img/gallery-6.jpg" alt="Picture of pet clothes" />
+              </figure>
+
+              <figure class="gallery-item">
+                <img src="img/gallery-7.jpg" alt="Picture of pet clothes" />
+              </figure>
+              <figure class="gallery-item">
+                <img src="img/gallery-8.jpg" alt="Picture of pet clothes" />
+              </figure>
+              <figure class="gallery-item">
+                <img src="img/gallery-9.jpg" alt="Picture of pet clothes" />
+              </figure>
+              <figure class="gallery-item">
+                <img src="img/gallery-10.jpg" alt="Picture of pet clothes" />
+              </figure>
+              <figure class="gallery-item">
+                <img src="img/gallery-11.jpg" alt="Picture of pet clothes" />
+              </figure>
+              <figure class="gallery-item">
+                <img src="img/gallery-12.jpg" alt="Picture of pet clothes" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-collaborations" id="collaborations">
+        <div class="container">
+          <div class="collaborations-text-box">
+            <span class="subheading">Other Products</span>
+            <h2 class="heading-secondary">Check Out Our Collaborators</h2>
+          </div>
+          <div class="collaborations grid grid--4-cols">
+            <div class="collaborations-card">
+              <figure class="collaborations-item">
+                <img
+                  src="img/collaboration-walking.jpg"
+                  alt="Picture of dog ready for walk"
+                />
+              </figure>
+              <div class="collaborations-content">
+                <p class="collaborations-title">Pet Walking</p>
+                <p class="collaborations-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="collaborations-btn">
+                  <a href="#" class="btn-showmore">Show more &rarr;</a>
+                </div>
+              </div>
+            </div>
+            <div class="collaborations-card">
+              <figure class="collaborations-item">
+                <img
+                  src="img/collaboration-food.jpg"
+                  alt="Picture of dog in front of food"
+                />
+              </figure>
+
+              <div class="collaborations-content">
+                <p class="collaborations-title">Nutrition</p>
+                <p class="collaborations-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="collaborations-btn">
+                  <a href="#" class="btn-showmore">Show more &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="collaborations-card">
+              <figure class="collaborations-item">
+                <img
+                  src="img/collaboration-toys.jpg"
+                  alt="Picture of dog hugging toy"
+                />
+              </figure>
+
+              <div class="collaborations-content">
+                <p class="collaborations-title">Toys & Accessories</p>
+                <p class="collaborations-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="collaborations-btn">
+                  <a href="#" class="btn-showmore">Show more &rarr;</a>
+                </div>
+              </div>
+            </div>
+            <div class="collaborations-card">
+              <figure class="collaborations-item">
+                <img
+                  src="img/collaboration-bed.jpg"
+                  alt="Picture of pet clothes"
+                />
+              </figure>
+
+              <div class="collaborations-content">
+                <p class="collaborations-title">Cozy Beds</p>
+                <p class="collaborations-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="collaborations-btn">
+                  <a href="#" class="btn-showmore">Show more &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="footer-logo-img"
+              alt="Gentlepaw logo"
+              src="img/Logo org.png"
+            />
+          </a>
+          <div class="under-logo">
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="icon-copyright">Logo Icon &copy; Daniel Ceha</p>
+            <p class="copyright">
+              Copyright &copy; <span class="year">2024</span> by Gentlepaw Inc.
+              All rights reserved
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">28is Oktovriou 76, Athina 104 34, Greece</p>
+              <p>
+                <a class="footer-link" href="tel:2103636036">210-36-36-036</a
+                ><br />
+                <a class="footer-link" href="mailto:hello@gentlepaws.com"
+                  >hello@gentlepaws.com</a
+                >
+              </p>
+            </address>
+          </div>
+          <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Sign in</a></li>
+              <li><a class="footer-link" href="#">Create account</a></li>
+              <li><a class="footer-link" href="#">iOS app</a></li>
+              <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About Gentlepaw</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+              <li><a class="footer-link" href="#">Cooking partners</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
